@@ -197,5 +197,11 @@ footer {
 }
 .device {
     flex-basis:calc(100% / 3) ;
-    border: 1px solid white;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.options i {
+    padding-left: 10px;
 }
