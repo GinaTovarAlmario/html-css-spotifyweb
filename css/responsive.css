@@ -1,13 +1,43 @@
 /* mobile first */
 @media screen and (min-width: 576px) {
     .sidebar {
-        flex-basis: 250px;
+        flex-basis: 200px;
     }
 
 }
 @media screen and (min-width: 768px) {
-    
+    /* si dispongono a lato le icone sezione favoriti */
+    .favourite {
+        flex-direction: row;
+    }
+    /* aumenta la dimensione tasti player */
+    .player-top i {
+        padding: 15px 20px;
+    }
+    .linebar.big-linebar {
+         width: 200px;
+    }
+    .linebar.small-linebar {
+        width: 120px;
+    }
+    /* sposta a dx la barra volume */
+    .device {
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
 }
 @media screen and (min-width: 992px) {
+    /* tutta la sezione del player zona artista si sposta a sinistra */
+    .song {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    /* aumentano ancora leggermente tasti player */
+    .linebar.big-linebar {
+        width: 250px;
+   }
+   .linebar.small-linebar {
+       width: 150px;
+   }
     
 }
