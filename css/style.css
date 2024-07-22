@@ -91,6 +91,13 @@ main{
 section p {
     color: var(--secondary-color);
 }
+.just-for-you {
+    display: flex;
+    gap: 10px;
+}
+.playlist-mix img {
+    max-width: 200px;
+}
 .artist {
     display: flex;
     gap: 10px;
