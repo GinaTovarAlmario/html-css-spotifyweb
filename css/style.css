@@ -36,7 +36,8 @@ section {
 .sidebar {
     flex-basis: 50px;
     flex-shrink: 0;
-    background-color: lightcoral;
+    background-color: aquamarine;
+    overflow-y: auto;
 }
 main{
     overflow-y: auto;
@@ -68,7 +69,20 @@ main{
     border-radius: 20px;
     cursor: pointer;
     background-color: black;
-} 
+}
+/* sidebar */
+.sidebar-top {
+    height: calc(100vh - 130px);
+    overflow: auto;
+    flex-grow: 1;
+    background-color: yellow;
+
+}
+.sidebar-bottom {
+    height: 30px;
+    background-color: blue;
+
+}
 /* contenuto principale */
 .navbar {
     padding: 10px 10px;
