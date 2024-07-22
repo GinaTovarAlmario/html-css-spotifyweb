@@ -1,4 +1,11 @@
 /* mobile first */
+.row {
+    margin: 0 16px;
+}
+.col {
+    padding: 0 16px;
+}
+
 @media screen and (min-width: 576px) {
     /* la sidebar si allarga */
     .sidebar {
@@ -12,10 +19,12 @@
     hr {
         display: block;
     }
-
-
 }
 @media screen and (min-width: 768px) {
+    /* voglio che le card stiano in quattro su una riga */
+    .col {
+        flex-basis: calc(100% / 4);
+    }
     /* si dispongono a lato le icone sezione favoriti */
     .favourite {
         flex-direction: row;
@@ -37,6 +46,10 @@
     }
 }
 @media screen and (min-width: 992px) {
+    /* voglio che le card stiano a 6 su una riga */
+    .col {
+        flex-basis: calc(100% / 6);
+    }
     /* tutta la sezione del player zona artista si sposta a sinistra */
     .song {
         justify-content: flex-start;

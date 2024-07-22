@@ -208,6 +208,20 @@ hr {
 section p {
     color: var(--secondary-color);
 }
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+
+}
+.col {
+    flex-basis:calc(100% / 2);
+    border: 2px solid black;
+}
+.card {
+    height: 100px;
+    background-color: pink;
+}
 .just-for-you {
     display: flex;
     gap: 10px;
@@ -273,7 +287,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 }
 .player-top i {
     padding:5px 10px;
@@ -323,6 +336,8 @@ footer {
 .underline:hover {
     color: var(--primary-color);
 }
+/* effetto segnalibro */
+
 /* effetto per bottone header */
 .raise:hover,
 .raise:focus {
