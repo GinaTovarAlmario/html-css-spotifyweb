@@ -12,6 +12,14 @@
 body {
     font-family: 'Montserrat';
 }
+h2 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+section {
+    padding: 10px 10px;
+}
 .top-content {
     height:calc(100vh - 80px);
     overflow-y: auto;
@@ -72,6 +80,7 @@ main{
     padding-bottom: 20px;
 }
 .navbar a {
+    font-size: 16px;
     text-decoration: none;
     color: #717378;
 }
@@ -80,15 +89,5 @@ footer {
     height: 80px;
     background-color: goldenrod;
 }
-/* utils */
-
-
-
-
-
-/* main */
-
-
-/* sidebar */
 
 /* footer */
