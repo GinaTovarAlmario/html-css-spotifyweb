@@ -14,6 +14,10 @@
 body {
     font-family: 'Montserrat';
 }
+img {
+    width: 100%;
+    display: inline-block;
+}
 h2 {
     color: white;
     font-size: 25px;
@@ -86,6 +90,14 @@ main{
 /* contenuro sezioni */
 section p {
     color: var(--secondary-color);
+}
+.artist {
+    display: flex;
+    gap: 10px;
+}
+.artist-cover img{
+    max-width: 200px;
+    border-radius: 50%;
 }
 footer {
     height: 80px;
