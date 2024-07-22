@@ -1,8 +1,21 @@
 /* mobile first */
 @media screen and (min-width: 576px) {
+    /* la sidebar si allarga */
     .sidebar {
         flex-basis: 200px;
     }
+    /* Compare il nome dell'utente nella sidebar bottom */
+    .name {
+        display: inline;
+    }
+    .click-here {
+        display: inline;
+    }
+    /* compare la linea intermedia */
+    hr {
+        display: block;
+    }
+
 
 }
 @media screen and (min-width: 768px) {
