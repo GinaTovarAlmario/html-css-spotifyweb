@@ -25,6 +25,9 @@ h2 {
 h4 {
     color: var(--primary-color);
 }
+h3 {
+    color: var(--primary-color);
+}
 section {
     padding: 10px 10px;
 }
