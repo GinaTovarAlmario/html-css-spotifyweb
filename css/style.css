@@ -31,6 +31,24 @@ main{
     right: 0;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+.upgrade {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.btn {
+    color: white;
+    border: 1px solid white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
 }
 .sidebar {
     flex-basis: 50px;
