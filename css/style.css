@@ -12,47 +12,37 @@
 body {
     font-family: 'Montserrat';
 }
-.top-bar {
+.top-content {
     height:calc(100vh - 80px);
-    overflow: auto;
-    position: relative;
-}
-header {
-    min-height: 80px;
-    background-color: dodgerblue;
-}
-.sidebar {
-    width: 60px;
-    background-color: lightcoral;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-}
-.inner-bar {
-    position: absolute;
-    left: 60px;
-    top: 0;
-    bottom: 0;
-    right: 0;
-}
-.inner-wrapper {
-    height: calc(100vh - 80px);
     overflow-y: auto;
+    background-color: green;
+
+    display: flex;
 }
 main{
-    min-height: 100px;
+    overflow-y: auto;
+    flex-grow: 1;
     background-color: purple;
+}
+ main header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sidebar {
+    flex-basis: 50px;
+    flex-shrink: 0;
+    background-color: lightcoral;
 }
 footer {
     height: 80px;
     background-color: goldenrod;
 }
 /* utils */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 /* header */
 
