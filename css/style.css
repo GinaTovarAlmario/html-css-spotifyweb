@@ -29,7 +29,7 @@ section {
     padding: 10px 10px;
 }
 .top-content {
-    height:calc(100vh - 80px);
+    height:calc(100vh - 100px);
     overflow-y: auto;
     display: flex;
 }
@@ -110,7 +110,7 @@ section p {
     border-radius: 50%;
 }
 footer {
-    height: 80px;
+    height: 100px;
     background-color: #292929;
 }
 
@@ -118,6 +118,7 @@ footer {
 .playerbar {
     height: 80px;
     display: flex;
+    padding-top: 30px;
 }
 .song {
     display: flex;
@@ -149,7 +150,6 @@ footer {
 }
 .player {
     flex-basis:calc(100% / 3) ;
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -178,12 +178,17 @@ footer {
     text-align: center;
 }
 .linebar {
-    min-width: 100px;
     height: 5px;
     background-color: var(--secondary-color);
     border: 1px solid black;
     border-radius: 5px;
     display: inline-block;
+}
+.linebar.big-linebar {
+    width: 100px;
+}
+.linebar.small-linebar {
+    width: 70px;
 }
 .inside-linebar {
     width: 30px;
