@@ -36,6 +36,14 @@ section {
     overflow-y: auto;
     display: flex;
 }
+.top-content a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+.top-content ul {
+    list-style-type: none;
+}
 .sidebar {
     flex-basis: 50px;
     flex-shrink: 0;
@@ -125,10 +133,8 @@ main{
     font-size: 30px;
     border: 1px solid;
     color: black;
+    cursor: pointer;
     background-color: var(--secondary-color);
-}
-.playlist ul {
-    list-style-type: none;
 }
 .playlist li {
     margin-bottom: 10px;
@@ -143,6 +149,7 @@ main{
     width: 20px;
     color: var(--secondary-color);
     border-radius: 100%;
+    cursor: pointer;
     background-image: url(../img/download.svg);
 }
 .profile {
@@ -152,6 +159,7 @@ main{
     background-color:var(--secondary-color) ;
     background-image: url(../img/profile.svg);
     border-radius: 100%;
+    cursor: pointer;
     border: 1px  solid gray;
 }
 .name {
@@ -159,11 +167,6 @@ main{
 }
 .click-here {
     display: none;
-}
-.download a {
-    cursor: pointer;
-    color: var(--secondary-color);
-    text-decoration: none;
 }
 .download {
     display: flex;
@@ -185,14 +188,11 @@ hr {
     margin: 3px 0 3px 10px;
     display: none;
 }
-
-
 /* contenuto principale */
 .navbar {
     padding: 10px 10px;
 }
 .navbar ul {
-    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -203,9 +203,6 @@ hr {
 }
 .navbar a {
     font-size: 16px;
-    text-decoration: none;
-    color:var(--secondary-color);
-    cursor: pointer;
 }
 /* contenuro sezioni */
 section p {
@@ -264,6 +261,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 5px;
+    cursor: pointer;
 }
 .player {
     flex-basis:calc(100% / 3) ;
@@ -275,10 +273,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 .player-top i {
     padding:5px 10px;
-  
+    cursor: pointer;
 }
 .bigger {
     font-size: 30px;
@@ -295,6 +294,7 @@ footer {
     border: 1px solid black;
     border-radius: 5px;
     display: inline-block;
+    cursor: pointer;
 }
 .linebar.big-linebar {
     width: 100px;
@@ -317,4 +317,8 @@ footer {
 }
 .options i {
     padding-left: 10px;
+    cursor: pointer;
+}
+.underline:hover {
+    border-bottom: 3px solid yellowgreen;
 }
