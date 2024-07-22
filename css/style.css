@@ -112,6 +112,24 @@ main{
 .navbar-sidebar > * {
     margin-bottom: 10px;
 }
+.playlist {
+    color: var(--secondary-color);
+}
+.add-playlist {
+    margin: 10px 0 10px 0;
+}
+.add {
+    font-size: 30px;
+    border: 1px solid;
+    color: black;
+    background-color: var(--secondary-color);
+}
+.playlist ul {
+    list-style-type: none;
+}
+.playlist li {
+    margin-bottom: 10px;
+}
 .sidebar-bottom {
     height: 80px;
     background-color: black;
@@ -134,7 +152,6 @@ main{
     border: 1px  solid gray;
 }
 .name {
-    display: none;
     color: var(--primary-color);
 }
 .click-here {
