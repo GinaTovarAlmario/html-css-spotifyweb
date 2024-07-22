@@ -1,6 +1,6 @@
 /* mobile first */
 .row {
-    margin: 0 16px;
+    margin: 0 -16px;
 }
 .col {
     padding: 0 16px;

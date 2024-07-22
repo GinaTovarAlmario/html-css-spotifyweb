@@ -212,16 +212,16 @@ section p {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-
 }
 .col {
     flex-basis:calc(100% / 2);
     border: 2px solid black;
 }
 .card {
-    height: 100px;
+    height: 200px;
     background-color: pink;
 }
+
 .just-for-you {
     display: flex;
     gap: 10px;
