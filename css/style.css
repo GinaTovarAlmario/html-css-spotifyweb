@@ -70,13 +70,41 @@ main{
     cursor: pointer;
     background-color: black;
 }
-/* sidebar */
+/* sidebar-top */
+.show-after {
+    display: none;
+}
+/* sidebar bottom */
 .sidebar-top {
     height: calc(100vh - 180px);
     overflow: auto;
     flex-grow: 1;
-    background-color: yellow;
-
+    background-color: black;
+    padding: 10px 10px;
+}
+.logo {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.logo-big {
+    display: none;
+}
+.logo-small {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+.logo img {
+    width: 100%;
+}
+.spotify {
+    display: none;
+}
+.navbar-sidebar {
+    color: var(--secondary-color);
 }
 .sidebar-bottom {
     height: 80px;
