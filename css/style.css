@@ -22,6 +22,9 @@ h2 {
     color: white;
     font-size: 25px;
 }
+h4 {
+    color: var(--primary-color);
+}
 section {
     padding: 10px 10px;
 }
@@ -108,29 +111,47 @@ section p {
 }
 footer {
     height: 80px;
+    background-color: #292929;
 }
 
 /* footer */
 .playerbar {
     height: 80px;
     display: flex;
-
 }
 .song {
-    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-basis:25%;
-    border: 1px solid black;
-
+}
+.cover-song img {
+    max-width: 40px;
+}
+.info-song {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5px;
+}
+.name-song {
+    color: var(--secondary-color);
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.favourite {
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 .player {
-    background-color: blue;
     flex-basis:50% ;
-    border: 1px solid black;
 }
 .device {
-    background-color: yellowgreen;
     flex-basis:25% ;
-    border: 1px solid black;
 
 
 }
