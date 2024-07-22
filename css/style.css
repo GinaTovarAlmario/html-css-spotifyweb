@@ -128,12 +128,12 @@ main{
 }
 .add-playlist {
     margin: 10px 0 10px 0;
+    cursor: pointer;
 }
 .add {
     font-size: 30px;
     border: 1px solid;
     color: black;
-    cursor: pointer;
     background-color: var(--secondary-color);
 }
 .playlist li {
@@ -319,6 +319,13 @@ footer {
     padding-left: 10px;
     cursor: pointer;
 }
+/* bonus */
 .underline:hover {
-    border-bottom: 3px solid yellowgreen;
+    color: var(--primary-color);
+}
+/* effetto per bottone header */
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 1em 1em -0.4em var(--hover);
+    transform: translateY(-0.25em);
 }
