@@ -79,6 +79,9 @@ main{
     height: calc(100vh - 180px);
     overflow: auto;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
     padding: 10px 10px;
 }
@@ -105,6 +108,9 @@ main{
 }
 .navbar-sidebar {
     color: var(--secondary-color);
+}
+.navbar-sidebar > * {
+    margin-bottom: 10px;
 }
 .sidebar-bottom {
     height: 80px;
