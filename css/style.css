@@ -108,7 +108,29 @@ section p {
 }
 footer {
     height: 80px;
-    background-color: goldenrod;
 }
 
 /* footer */
+.playerbar {
+    height: 80px;
+    display: flex;
+
+}
+.song {
+    background-color: pink;
+    flex-basis:25%;
+    border: 1px solid black;
+
+}
+.player {
+    background-color: blue;
+    flex-basis:50% ;
+    border: 1px solid black;
+}
+.device {
+    background-color: yellowgreen;
+    flex-basis:25% ;
+    border: 1px solid black;
+
+
+}
