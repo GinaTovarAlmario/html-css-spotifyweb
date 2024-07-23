@@ -6,8 +6,14 @@
         flex-basis: 210px;
     }
     /* il suo contenuto si sposta a sinistra */
-    .sidebar-top {
+    .sidebar-menu {
         align-items: flex-start;
+        padding-left: 10px;
+    }
+    .new-playlist {
+        padding-left: 10px;
+    }
+    .musica {
         padding-left: 10px;
     }
     .sidebar-bottom {
@@ -15,14 +21,13 @@
         padding-left: 10px;
     }
     /* cambia la dimensione logo */
-    .logo {
-        width: 180px;
+    .sidebar-logo {
+         width: 160px;
     }
     /* compare la linea intermedia nella sidebar */
     hr {
         margin: 0 auto;
     }
-
     /* regole visibilità */
     .d-sm-none {
         display: none;
@@ -80,8 +85,6 @@
     .timeline li {
         flex-basis:calc(100% / 6);
     }
-    /* compare una parte di testo sotto immagini mix */
-
     /* tutta la sezione del player zona artista si sposta a sinistra */
     .song {
         justify-content: flex-start;
@@ -94,7 +97,6 @@
    .linebar.small-linebar {
        width: 100px;
    }
-    
    /* regole visibilità */
     .d-lg-none {
         display: none;

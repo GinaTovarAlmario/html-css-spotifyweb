@@ -89,35 +89,33 @@ main{
     background-color: black;
 }
 /* sidebar-top */
-.sidebar-top {
-    height: calc(100vh - 190px);
-    overflow: auto;
-    flex-grow: 1; 
+.sidebar-logo {
+    width: 25px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+.sidebar-logo img {
+    color: var(--primary-color);
+}
+
+.sidebar-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
-}
-.logo {
-    width: 25px;
-}
-.logo img {
-    color: var(--primary-color);
-    width: 90%;
-    margin-bottom: 10px;
 }
 .navbar-sidebar {
     color: var(--secondary-color);
 }
 .navbar-sidebar > * {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     cursor: pointer;
 }
 .playlist {
     color: var(--secondary-color);
 }
 .add-playlist {
-    margin: 10px 0 10px 0;
     cursor: pointer;
 }
 .add {
@@ -130,21 +128,12 @@ main{
     margin-bottom: 10px;
 }
 /* sidebar bottom */
-.sidebar-bottom {
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    padding-bottom: 10px;
-    text-align: center;
-}
 .sidebar-bottom  img{
     min-width: 20px;
     height: 20px;
     color: var(--secondary-color);
     cursor: pointer; 
-} 
+}  
 .download {
     display: flex;
     gap: 10px;
@@ -266,11 +255,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 .player-bottom {
     font-size: 12px;
-
 }
 .player-top i {
     padding:5px 10px;
@@ -345,8 +332,6 @@ footer {
     box-shadow: 0 1em 1em -0.4em var(--hover);
     transform: translateY(-0.25em);
 }
-
-
 /* centralizzare */
 .d-none {
     display: none;
@@ -359,4 +344,32 @@ footer {
 }
 .d-inline {
     display: inline;
+}
+ .wrapper {
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+ }
+.sidebar-bottom {
+    height:80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    text-align: center;
+}
+/* ora matriocka dentro wrapper */
+.sidebar-menu {
+    height: 80px;
+    overflow-y: auto;
+
+}
+.new-playlist {
+    height:60px;
+    overflow-y: auto;
+}
+.musica {
+    height: calc(calc(100vh - 180px) - 220px);
+    overflow-y: auto;
+
 }
