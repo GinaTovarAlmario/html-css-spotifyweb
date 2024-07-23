@@ -15,8 +15,7 @@ body {
     font-family: 'Montserrat';
 }
 img {
-    width: 100%;
-    display: inline-block;
+    max-width: 100%;
 }
 h2 {
     color: white;
@@ -98,12 +97,11 @@ main{
 }
 .logo {
     color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    gap: 10px;
     margin-bottom: 20px;
 }
 .logo-big {
+    height: 30px;
+    min-width: 130px;
     display: none;
 }
 .logo-small {
@@ -111,17 +109,12 @@ main{
     width: 30px;
     display: inline-block;
 }
-.logo img {
-    width: 100%;
-}
-.spotify {
-    display: none;
-}
 .navbar-sidebar {
     color: var(--secondary-color);
 }
 .navbar-sidebar > * {
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .playlist {
     color: var(--secondary-color);
@@ -255,7 +248,7 @@ footer {
     flex-basis:calc(100% / 3);
 }
 .cover-song img {
-    max-width: 40px;
+    width: 40px;
 }
 .info-song {
     display: flex;

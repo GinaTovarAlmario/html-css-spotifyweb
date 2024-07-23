@@ -1,15 +1,22 @@
 /* mobile first */
 .row {
-    margin: 0 -16px;
+    margin: 0 -1rem;
 }
 .col {
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 @media screen and (min-width: 576px) {
     /* la sidebar si allarga */
     .sidebar {
         flex-basis: 200px;
+    }
+    /* immagine logo cambia per quella più grane */
+    .logo-small {
+        display: none;
+    }
+    .logo-big {
+        display:block;
     }
     /* nella sidebar top compare testo icone nascosti*/
     .show-after {
