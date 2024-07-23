@@ -89,10 +89,10 @@
     }
     /* aumentano ancora leggermente tasti player */
     .linebar.big-linebar {
-        width: 250px;
+        width: 220px;
    }
    .linebar.small-linebar {
-       width: 150px;
+       width: 100px;
    }
     
    /* regole visibilità */

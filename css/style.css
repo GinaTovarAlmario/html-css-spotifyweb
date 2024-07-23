@@ -262,23 +262,15 @@ footer {
     color: var(--primary-color);
     text-align: center;
 }
-.sx {
+.player-top {
     display: flex;
     align-items: center;
     justify-content: space-around;
 
 }
-.dx {
+.player-bottom {
     font-size: 12px;
 
-}
-.player-top {
-    color: var(--primary-color);
-    flex-basis: 70%;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 .player-top i {
     padding:5px 10px;
@@ -286,11 +278,6 @@ footer {
 }
 .bigger {
     font-size: 30px;
-}
-.player-bottom {
-    color: var(--primary-color);
-    font-size: 12px;
-    margin-left: 60px;
 }
 .linebar {
     height: 7px;
