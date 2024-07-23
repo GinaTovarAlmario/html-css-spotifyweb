@@ -1,9 +1,9 @@
 /* mobile first */
 
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
     /* la sidebar si allarga */
     .sidebar {
-        flex-basis: 250px;
+        flex-basis: 210px;
     }
     /* il suo contenuto si sposta a sinistra */
     .sidebar-top {
@@ -37,7 +37,7 @@
         display: inline;
     }
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     /* voglio che le cover album stiano in quattro su una riga */
     .timeline li {
         flex-basis:25%;
@@ -75,7 +75,7 @@
         display: inline;
     }
 }
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     /* voglio che le card stiano a 6 su una riga */
     .timeline li {
         flex-basis:calc(100% / 6);
