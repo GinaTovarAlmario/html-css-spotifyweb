@@ -19,34 +19,33 @@
         <div class="sidebar"> 
             <div class="sidebar-top">
                 <div class="logo">
-                    <div class="logo-small">
-                        <img src="../html-css-spotifyweb/img/logo-small.svg" alt="spotify">
-                    </div>
-                    <div class="logo-big">
-                        <img src="../html-css-spotifyweb/img/logo.svg" alt="spotify-big">
-                    </div>
+                    <a href="#">
+                        <img class="d-sm-none" src="../html-css-spotifyweb/img/logo-small.svg" alt="spotify">
+                    
+                        <img class="d-none d-sm-inline" src="../html-css-spotifyweb/img/logo.svg" alt="spotify-big">
+                    </a>                   
                 </div>
                 <nav class="navbar-sidebar">
                     <div class="home underline">
                         <span>
                             <i class="fa-solid fa-house"></i>
                         </span>
-                        <span class="show-after">Home</span>
+                        <span class="d-none d-sm-inline">Home</span>
                     </div>
                     <div class="search underline">
                         <span>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
-                        <span class="show-after">Cerca</span>
+                        <span class="d-none d-sm-inline">Cerca</span>
                     </div>
                     <div class="playlist underline">
                         <span>
                             <i class="fa-solid fa-chart-simple"></i>
                         </span>
-                        <span class="show-after">La tua Libreria</span>
+                        <span class="d-none d-sm-inline">La tua Libreria</span>
                     </div>
                 </nav>
-                <div class="playlist show-after">
+                <div class="playlist d-none d-sm-block">
                     <h3>Playlist</h3>
                     <div class="add-playlist">
                         <span class="add"><i class="fa-solid fa-plus"></i></span>
@@ -65,14 +64,17 @@
             </div>
             <div class="sidebar-bottom">
                 <div class="download">
-                    <div class="icon-download"></div>
-                    <span class="show-after"><a href="#">Installa app</a></span>
+                    <div class="icon-download">
+                        <img src="../html-css-spotifyweb/img/download.svg" alt="download">
+                    </div>
+                    <span class="d-none d-sm-inline"><a href="#">Installa app</a></span>
                 </div>
-                <hr>
+                <hr class="d-none d-sm-block">
                 <div class="user-name">
                     <div class="profile">
+                        <img src="../html-css-spotifyweb/img/profile.svg" alt="user">
                     </div>
-                    <span class="show-after name">John Doe</span>
+                    <span class="d-none name d-sm-inline">John Doe</span>
                 </div>
             </div>
         </div> 
@@ -100,6 +102,9 @@
                         <article>
                             <figure>
                                 <img src="../html-css-spotifyweb/img/metal_lifting.jpg" alt="metal"> 
+                                <div class="hidden-player">
+                                    <i class="far fa-play-circle fa-2x"></i>
+                                </div>
                             </figure>
                             <h4>Heavy Metal</h4>
                             <h6>Subtitle</h6>
@@ -109,6 +114,9 @@
                         <article>
                             <figure>
                                 <img src="../html-css-spotifyweb/img/stranger.jpeg" alt="stranger">
+                                <div class="hidden-player">
+                                    <i class="far fa-play-circle fa-2x"></i>
+                                </div>
                             </figure>
                             <h4>Stranger Things,Vol.1(a Netflix original series soundtrack)</h4>
                             <h6>Kyle Dixon and Michael</h6>
@@ -118,6 +126,9 @@
                         <article>
                             <figure>
                                 <img src="../html-css-spotifyweb/img/aquietplace.jpeg" alt="quiet">
+                                <div class="hidden-player">
+                                    <i class="far fa-play-circle fa-2x"></i>
+                                </div>
                             </figure>
                             <h4>A Quiet Place</h4>
                             <h6>Subtitle</h6>
@@ -127,6 +138,9 @@
                         <article>
                             <figure>
                                 <img src="../html-css-spotifyweb/img/split.jpeg" alt="split">
+                                <div class="hidden-player">
+                                    <i class="far fa-play-circle fa-2x"></i>
+                                </div>
                             </figure>
                             <h4>Split</h4>
                             <h6>Subtitle</h6>
@@ -136,6 +150,9 @@
                         <article>
                             <figure>
                                 <img src="../html-css-spotifyweb/img/cure.jpeg" alt="cure">
+                                <div class="hidden-player">
+                                    <i class="far fa-play-circle fa-2x"></i>
+                                </div>
                             </figure>
                             <h4>A Cure For Wellness</h4>
                             <h6>Subtitle</h6>
@@ -145,6 +162,9 @@
                         <article>
                             <figure>
                                 <img src="../html-css-spotifyweb/img/sinister.jpeg" alt="sinis">
+                                <div class="hidden-player">
+                                    <i class="far fa-play-circle fa-2x"></i>
+                                </div>
                             </figure>
                             <h4>Sinister</h4>
                             <h6>Subtitle</h6>
@@ -155,20 +175,22 @@
             <!--playlist creata per te   -->
             <section id="recommended">
                 <h2>Creato per John Doe</h2>
-                <p> Più ascolti, più accurati saranno i suggerimenti.</p>
+                <h6> Più ascolti, più accurati saranno i suggerimenti.</h6>
                 <div class="just-for-you">
                     <div class="playlist-mix">
                         <img src="../html-css-spotifyweb/img/radar.jpeg" alt="radar">
+                        <h4 class="d-none d-lg-block">Release Radar</h4> 
                     </div>
                     <div class="playlist-mix">
                         <img src="../html-css-spotifyweb/img/mixdaily.jpeg" alt="mix">
+                        <h4 class="d-none d-lg-block">Daily Mix 1</h4>
                     </div>
                 </div>
             </section>
             <!-- artisti consigliati per te  -->
             <section id="popular-artist">
                 <h2>Artisti più popolari</h2>
-                <p> Più ascolti, più accurati saranno i suggerimenti.</p>
+                <h6> Più ascolti, più accurati saranno i suggerimenti.</h6>
                 <div class="artist">
                     <div class="artist-cover">
                         <img src="../html-css-spotifyweb/img/youg.jpeg" alt="youg">
@@ -189,8 +211,8 @@
                     </div>
                     <div class="name-song">
                         <h4>Sinister</h4>
-                        <p>Brano</p>
-                        <p>Nome</p>
+                        <h6 class="d-sm-inline">Brano</h6>
+                        <h6 class="d-sm-inline">Nome</h6>
                     </div>
                 </div>
                 <div class="favourite">

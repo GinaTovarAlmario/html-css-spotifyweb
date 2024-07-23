@@ -1,30 +1,46 @@
 /* mobile first */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width:576px) {
     /* la sidebar si allarga */
     .sidebar {
-        flex-basis: 200px;
+        flex-basis: 250px;
     }
-    /* immagine logo cambia per quella più grane */
-    .logo-small {
-        display: none;
+    /* il suo contenuto si sposta a sinistra */
+    .sidebar-top {
+        align-items: flex-start;
+        padding-left: 10px;
     }
-    .logo-big {
-        display:inline-block;
+    .sidebar-bottom {
+        align-items: flex-start;
+        padding-left: 10px;
     }
-    /* nella sidebar top compare testo icone nascosti*/
-    .show-after {
-        display: inline;
-    }    
+    /* cambia la dimensione logo */
+    .logo {
+        width: 180px;
+    }
     /* compare la linea intermedia nella sidebar */
     hr {
+        margin: 0 auto;
+    }
+
+    /* regole visibilità */
+    .d-sm-none {
+        display: none;
+    } 
+    .d-sm-flex {
+        display: flex;
+    }
+    .d-sm-block {
         display: block;
     }
+    .d-sm-inline {
+        display: inline;
+    }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px) {
     /* voglio che le cover album stiano in quattro su una riga */
     .timeline li {
-        flex-basis: calc(100% / 4);
+        flex-basis:25%;
     }
     /* si dispongono a lato le icone sezione favoriti */
     .favourite {
@@ -45,12 +61,27 @@
         justify-content: flex-end;
         padding-right: 10px;
     }
+    /* regole visibilità */
+    .d-md-none {
+        display: none;
+    } 
+    .d-md-flex {
+        display: flex;
+    }
+    .d-md-block {
+        display: block;
+    }
+    .d-md-inline {
+        display: inline;
+    }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width:992px) {
     /* voglio che le card stiano a 6 su una riga */
     .timeline li {
-        flex-basis: calc(100% / 6);
+        flex-basis:calc(100% / 6);
     }
+    /* compare una parte di testo sotto immagini mix */
+
     /* tutta la sezione del player zona artista si sposta a sinistra */
     .song {
         justify-content: flex-start;
@@ -64,4 +95,17 @@
        width: 150px;
    }
     
+   /* regole visibilità */
+    .d-lg-none {
+        display: none;
+    } 
+    .d-lg-flex {
+        display: flex;
+    }
+    .d-lg-block {
+        display: block;
+    }
+    .d-lg-inline {
+        display: inline;
+    }
 }
