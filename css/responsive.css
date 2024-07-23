@@ -1,10 +1,4 @@
 /* mobile first */
-.row {
-    margin: 0 -1rem;
-}
-.col {
-    padding: 0 1rem;
-}
 
 @media screen and (min-width: 576px) {
     /* la sidebar si allarga */
@@ -16,20 +10,20 @@
         display: none;
     }
     .logo-big {
-        display:block;
+        display:inline-block;
     }
     /* nella sidebar top compare testo icone nascosti*/
     .show-after {
         display: inline;
     }    
-    /* compare la linea intermedia */
+    /* compare la linea intermedia nella sidebar */
     hr {
         display: block;
     }
 }
 @media screen and (min-width: 768px) {
-    /* voglio che le card stiano in quattro su una riga */
-    .col {
+    /* voglio che le cover album stiano in quattro su una riga */
+    .timeline li {
         flex-basis: calc(100% / 4);
     }
     /* si dispongono a lato le icone sezione favoriti */
@@ -54,7 +48,7 @@
 }
 @media screen and (min-width: 992px) {
     /* voglio che le card stiano a 6 su una riga */
-    .col {
+    .timeline li {
         flex-basis: calc(100% / 6);
     }
     /* tutta la sezione del player zona artista si sposta a sinistra */
